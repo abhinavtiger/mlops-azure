@@ -1,6 +1,6 @@
 from flask import Flask,redirect, url_for, request,render_template,jsonify
 import os
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+from azure.storage.blob import BlobServiceClient,ContainerClient
 
 app = Flask(__name__)
 #Get request
