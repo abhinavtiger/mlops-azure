@@ -1,6 +1,6 @@
 from flask import Flask,redirect, url_for, request,render_template,jsonify
 import os
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+from azure.storage.blob import BlobServiceClient,ContainerClient
 
 app = Flask(__name__)
 #Get request
@@ -19,4 +19,4 @@ def fun(foldername):
             res.append(file)
     return jsonify(res)
 if __name__ == '__main__':
-    app.run(host ='0.0.0.0', port = 5000, debug = True)
+    app.run(host ='0.0.0.0', port = 5000)
